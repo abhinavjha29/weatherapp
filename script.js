@@ -33,7 +33,8 @@ const getcurrentTime =() => {
         "Dec"
     ] ;
     var currentTime = new Date() ;
-    var month = months[currentTime.getMonth()+1] ;
+    var month = months[currentTime.getMonth()] ;
+    //console.log(currentTime.getMonth()) ;
     var date = currentTime.getDate() ;
     let hour = currentTime.getHours() ;
     let min = currentTime.getMinutes() ;
